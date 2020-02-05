@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container logos-company">
+      <section class="customer-logos slider">
+        <div class="slide finzy">
+          <img
+            class="customer-logo"
+            src="./landingpagestaticfiles/assets/unnamed-26@3x.jpg"
+            alt="finzy"
+          />
+        </div>
+        <div class="slide goodrej">
+          <img
+            class="customer-logo"
+            src="./landingpagestaticfiles/assets/emamiart.png"
+            alt="emamiart"
+          />
+        </div>
+        <div class="slide pedlite">
+          <img
+            class="customer-logo"
+            src="./landingpagestaticfiles/assets/unnamed-28@3x.png"
+            alt="pidlite"
+          />
+        </div>
+        <div class="slide manipal">
+          <img
+            class="customer-logo"
+            src="./landingpagestaticfiles/assets/unnamed-30@3x.png"
+            alt="Manipal"
+          />
+        </div>
+        <div class="slide wipro">
+          <img
+            class="customer-logo"
+            src="./landingpagestaticfiles/assets/unnamed-25@3x.png"
+            alt="Wipro"
+          />
+        </div>
+        <div class="slide ujivan">
+          <img
+            class="customer-logo"
+            src="./landingpagestaticfiles/assets/unnamed-13@3x.png"
+            alt="Ujivan"
+          />
+        </div>
+      </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script type="text/javascript">
+      const scrollHandle = () => {
+        if (nav)
+          window.scrollY > 25
+            ? nav.classList.add("navShadow")
+            : nav.classList.remove("navShadow");
+      };
+      window.addEventListener("scroll", scrollHandle);
+      $(document).ready(function() {
+        $(".customer-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 3
+              }
+            }
+          ]
+        });
+      });
+    </script>
+  </body>
+</html>
